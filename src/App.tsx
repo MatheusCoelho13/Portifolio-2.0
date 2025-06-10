@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.tsx
+import React from 'react';
+import AnimatedBackground from './components/AnimatedBackground';
+
+// Importando os componentes de estilo dos novos arquivos
+import {
+	ContentContainer,
+	MainContent,
+	Title,
+	StyledButton,
+} from './components/styles/AppStyles';
+import { Header, LogoD, Nav } from './components/styles/HeaderStyles';
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+	return (
+		<div
+			style={{
+				position: 'relative',
+				overflowY: 'hidden',
+				overflowX: 'hidden',
+			}}>
+			<AnimatedBackground />
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+			<ContentContainer>
+				<Header>
+					<LogoD>D</LogoD>
+					<Nav>
+						<ul>
+							<li>
+								<a href="#">Início</a>
+							</li>
+							<li>
+								<a href="#">Sobre</a>
+							</li>
+							<li>
+								<a href="#">Projetos</a>
+							</li>
+							<li>
+								<a href="#">Contato</a>
+							</li>
+						</ul>
+					</Nav>
+				</Header>
+
+				<MainContent>
+					<Title>
+						Construo experiências <br /> digitais interativas.
+					</Title>
+					<StyledButton>Veja meu trabalho</StyledButton>
+				</MainContent>
+			</ContentContainer>
+		</div>
+	);
 }
 
-export default App
+export default App;
