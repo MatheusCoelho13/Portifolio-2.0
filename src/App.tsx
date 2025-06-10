@@ -7,7 +7,8 @@ import {
 	ContentContainer,
 	MainContent,
 	Title,
-	StyledButton,
+	Subtitle,
+	StyledButton
 } from './components/styles/AppStyles';
 import { Header, LogoD, Nav } from './components/styles/HeaderStyles';
 
@@ -25,7 +26,7 @@ function App() {
 
 			<ContentContainer>
 				<Header>
-					<LogoD>D</LogoD>
+					<LogoD>M</LogoD>
 					<Nav>
 						<ul>
 							<li>
@@ -48,6 +49,10 @@ function App() {
 					<Title>
 						Construo experiências <br /> digitais interativas.
 					</Title>
+					<Subtitle>
+						Sou Desevolvedor Full-stack focado em criar soluções
+						tecnológicas inovadoras e eficientes.
+						</Subtitle>
 					<StyledButton>Veja meu trabalho</StyledButton>
 				</MainContent>
 			</ContentContainer>

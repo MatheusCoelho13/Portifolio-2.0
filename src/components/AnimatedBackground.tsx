@@ -15,12 +15,8 @@ const Background = styled(motion.div)`
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background: radial-gradient(
-			circle at 30% 30%,
-			rgba(75, 0, 130, 0.25),
-			transparent 40%
-		),
-		radial-gradient(circle at 70% 70%, rgba(0, 0, 255, 0.2), transparent 50%),
+	background: radial-gradient(circle at 30% 30%, #2563eb, transparent 40%),
+		radial-gradient(circle at 70% 70%, rgba(6, 25, 196, 0.637), transparent 50%),
 		linear-gradient(135deg, #0e0e1b, #12122b);
 	filter: blur(0px);
 	background-repeat: no-repeat;

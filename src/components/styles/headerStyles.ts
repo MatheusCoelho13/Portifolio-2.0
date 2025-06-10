@@ -21,13 +21,13 @@ export const LogoD = styled.div`
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	border: 2px solid #8e2de2;
+	border: 2px solid rgb(0, 195, 255);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 28px;
 	font-weight: 700;
-	color: #8e2de2;
+	color:rgb(78, 190, 241);
 	background-color: rgba(142, 45, 226, 0.1);
 `;
 
